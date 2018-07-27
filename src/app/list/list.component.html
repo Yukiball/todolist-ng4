@@ -1,0 +1,16 @@
+<div class="main">
+  <h3 class="big-title">任务列表</h3>
+  <div class="tasks">
+      <span class="no-task-tip" *ngIf="data.length == 0">未添加</span>
+      <ul class="todo-list">
+        <li *ngFor="let listText of data"  class="editing" [class.completed]="listText.checked">
+          <input class="edit none"  value="listText.text" [(ngModel)]="listText.text" (keyup)="changeKeyup($event,listText.text)">
+          <div class="view block"  (dblclick)="dbclick(listText.text)" >
+            <input class="toggle" type="checkbox" [(ngModel)]="listText.checked">
+            <label class="text">{{listText.text}}</label>
+            <button class="destory" (click)="del(listText.text)"></button>
+          </div>
+        </li>
+      </ul>
+  </div>
+</div>

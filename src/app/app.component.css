@@ -1,0 +1,118 @@
+body {
+  margin:0;
+  background-color: #fafafa;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2{
+  margin:0;
+  font-size: 12px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+input {
+  outline: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  outline: 0;
+}
+
+ul {
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+
+.page-top {
+  width: 100%;
+  height: 40px;
+  background-color: #db4c3f;
+}
+
+.page-content {
+  width: 50%;
+  margin: 0px auto;
+}
+
+.page-content h2{
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+.main {
+  width: 50%;
+  margin: 0px auto;
+  box-sizing:border-box;
+}
+
+
+.task-input {
+  width: 99%;
+  height:30px;
+  outline: 0;
+  border: 1px solid #ccc;
+}
+.task-repeat-tip{
+  color: #db4c3f;
+  padding-left: 10px;
+}
+
+.task-count{
+  display: flex;
+  margin:10px 0;
+}
+
+.task-count li {
+  padding-left: 10px;
+  flex: 1;
+  color: #dd4b39;
+}
+
+.task-count li:nth-child(1){
+  padding: 5px 0 0 10px;
+}
+
+.action {
+  text-align: center;
+  display: flex;
+}
+.action a {
+  margin: 0px 10px;
+  flex: 1;
+  padding: 5px 0;
+  color: #777;
+
+}
+
+.action a:nth-child(3){
+  margin-right: 0;
+}
+
+.active {
+  border: 1px solid rgba(175, 47, 47, 0.2);
+}
+
+.tasks {
+  background-color: #fff;
+}
+.no-task-tip {
+  padding:10px 0 10px 10px;
+  color:#777;
+}
+
+.big-title {
+  color: #222;
+}
